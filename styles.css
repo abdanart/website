@@ -1,0 +1,139 @@
+/* Reset dasar untuk menghindari margin dan padding default browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Atur font dasar */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #ffa927; /* Latar belakang oren pastel yang sangat lembut */
+  color: #333;
+}
+
+/* Styling untuk header */
+header {
+  background-color: #ff8c00; /* Warna header oren pastel lebih gelap */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative; /* Agar menu dapat diposisikan secara absolut */
+}
+
+/* Styling untuk hamburger menu */
+.menu-icon {
+  display: none; /* Menu tersembunyi pada desktop */
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Menampilkan hamburger menu pada layar kecil (responsive) */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Menampilkan hamburger menu pada perangkat dengan lebar layar kecil */
+  }
+
+  /* Menu navigasi yang tersembunyi */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #ff9900;
+    text-align: center;
+  }
+
+  /* Menu navigasi yang ditampilkan */
+  .nav-menu.active {
+    display: block;
+  }
+
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav-menu ul li {
+    padding: 10px 0;
+  }
+
+  .nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+  }
+
+  .nav-menu ul li a:hover {
+    background-color: #ffb700; /* Efek hover pada menu */
+  }
+}
+
+/* Styling untuk bagian utama */
+main {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* Menyusun tombol secara vertikal */
+  align-items: center; /* Menyelaraskan tombol di tengah */
+  gap: 15px; /* Jarak antar tombol */
+}
+
+main h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Styling untuk tombol */
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #ffb74d; /* Warna tombol oren yang lembut */
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus pada tombol */
+  width: 200px; /* Lebar tombol tetap */
+}
+
+/* Efek hover tombol */
+.button:hover {
+  background-color: #fb8c00; /* Warna tombol saat hover lebih gelap */
+  transform: scale(1.1); /* Membesarkan tombol sedikit saat hover */
+}
+
+/* Efek saat tombol ditekan (active state) */
+.button:active {
+  transform: scale(0.95); /* Mengurangi ukuran tombol saat ditekan */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Mengurangi bayangan saat ditekan */
+}
+
+/* Animasi untuk teks fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

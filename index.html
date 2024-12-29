@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Judul Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Selamat Datang</h1>
+      <img src="logo.png" alt="Logo Forum Komunitas" width="150" />
+      <!-- Menambahkan Hamburger Menu -->
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <!-- Menu yang tersembunyi -->
+      <nav id="nav-menu" class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="toko-online.html">Toko Online</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Toko online</h1>
+      <a href="#" class="button">Shopee</a>
+      <a href="#" class="button">TikTok Shop</a>
+      <a href="#" class="button">TokPed</a>
+      <a href="#" class="button">Lazada</a>
+    </main>
+
+    <script>
+      // Fungsi untuk toggle menu
+      function toggleMenu() {
+        const navMenu = document.getElementById("nav-menu");
+        navMenu.classList.toggle("active"); // Menambahkan/menyembunyikan menu
+        console.log("Menu toggle triggered"); // Menambahkan log untuk debugging
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Online</title>
+    <style>
+      /* Reset dasar untuk menghindari margin dan padding default browser */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Atur font dasar */
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        background-color: #fb8c00a, 0 0.708; /* Latar belakang yang lembut */
+        color: #333;
+      }
+
+      /* Styling untuk header */
+      h1 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 2.5rem;
+        color: #ff7b00; /* Warna teks oren */
+        padding: 20px;
+        background-color: #ffa515; /* Warna latar belakang header */
+        color: white; /* Warna teks putih agar kontras */
+        border-radius: 10px;
+        box-shadow: #333;
+      }
+
+      /* Styling untuk bagian utama */
+      main {
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column; /* Menyusun tombol secara vertikal */
+        align-items: center; /* Menyelaraskan tombol di tengah */
+        gap: 15px; /* Jarak antar tombol */
+      }
+
+      /* Styling untuk tombol */
+      .button {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 1.2rem;
+        color: white;
+        background-color: #ff6e21; /* Warna tombol oren */
+        text-decoration: none;
+        border-radius: 5px;
+        text-align: center;
+        transition: all 0.3s ease;
+        width: 200px; /* Lebar tombol tetap */
+      }
+
+      /* Efek hover tombol */
+      .button:hover {
+        background-color: #fb8c00; /* Warna tombol saat hover lebih gelap */
+        transform: scale(1.1); /* Membesarkan tombol sedikit saat hover */
+      }
+
+      /* Efek saat tombol ditekan (active state) */
+      .button:active {
+        transform: scale(0.95); /* Mengurangi ukuran tombol saat ditekan */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Mengurangi bayangan saat ditekan */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>TOKO ONLINE</h1>
+    </header>
+    <main>
+      <a href="#" class="button">Shopee</a>
+      <a href="#" class="button">TikTok Shop</a>
+      <a href="#" class="button">TokPed</a>
+      <a href="#" class="button">Lazada</a>
+    </main>
+  </body>
+</html>
